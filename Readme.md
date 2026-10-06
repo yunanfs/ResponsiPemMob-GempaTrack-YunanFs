@@ -17,11 +17,21 @@ Dibuat untuk tugas Responsi Mobile I — Paket 1: Aplikasi Katalog dan Monitorin
 
 ## Screenshot
 
-| Home Screen | Detail Screen |
-|---|---|
-| *[screenshot home]* | *[screenshot detail]* |
+<table>
+  <tr>
+    <th>Home Screen</th>
+    <th>Detail Screen</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img width="280" alt="Home Screen" src="https://github.com/user-attachments/assets/a30bf2c5-158e-426c-991d-a79d91bfb96c" />
+    </td>
+    <td align="center">
+      <img width="280" alt="Detail Screen" src="https://github.com/user-attachments/assets/713aea40-c99f-4027-97bb-e85568e236fe" />
+    </td>
+  </tr>
+</table>
 
-Catatan: replace placeholder dengan screenshot asli dari emulator/device.
 
 ## Arsitektur
 
