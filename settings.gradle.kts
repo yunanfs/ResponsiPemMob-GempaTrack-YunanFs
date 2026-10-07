@@ -22,6 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ResponsiMobile-GempaBMKG"
-include(":app")
- 
+rootProject.name = "GempaTrack"
+include(":app") 
