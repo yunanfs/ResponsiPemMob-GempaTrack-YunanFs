@@ -228,3 +228,5 @@ Aplikasi menggunakan Material Design 3 dengan dukungan:
 Data gempa yang ditampilkan bergantung pada ketersediaan API BMKG dan koneksi internet perangkat.
 
 Screenshot pada bagian dokumentasi dapat diganti dengan screenshot aktual dari aplikasi yang berjalan pada emulator atau perangkat Android.
+
+video demo : https://drive.google.com/drive/folders/1v8m-cGWxwcqD54hfyXvkNeffedkqEZqR
