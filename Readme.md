@@ -1,21 +1,21 @@
-# 🌊 GempaTrack
+#  GempaTrack
 
 Aplikasi Android **katalog dan monitoring gempa terkini BMKG** — dibangun dengan **Kotlin + Jetpack Compose (Material 3)**, arsitektur **MVVM**, data dari REST API BMKG secara dinamis.
 
 Dibuat untuk tugas **Responsi Mobile I — Paket 1: Aplikasi Katalog dan Monitoring Gempa BMKG**.
 
-## ✨ Fitur
+## Fitur
 
 | Fitur | Keterangan |
 |---|---|
-| 📋 **Daftar Gempa Terkini** | Menampilkan 15 gempa terakhir dari API BMKG via `LazyColumn` — Tanggal, Magnitudo, Wilayah (tanpa gambar) |
-| 🔍 **Pencarian Wilayah** | Search bar filter lokal (in-memory) berdasarkan nama wilayah, case-insensitive, tanpa request tambahan |
-| 📄 **Detail Gempa** | Klik item → halaman detail: Tanggal, Jam, Koordinat, Magnitudo, Kedalaman, Wilayah, Potensi |
-| 🔄 **Loading & Error State** | Indikator loading saat fetch; pesan error + tombol "Coba Lagi" saat jaringan bermasalah |
-| 🎨 **Material Design 3** | Tema light/dark + custom typography, palet oranye lembut (burnt orange) nyaman dilihat |
-| 🧭 **Navigasi 2 Screen** | Home ⇄ Detail via `navigation-compose`, tombol back berfungsi |
+|  **Daftar Gempa Terkini** | Menampilkan 15 gempa terakhir dari API BMKG via `LazyColumn` — Tanggal, Magnitudo, Wilayah (tanpa gambar) |
+|  **Pencarian Wilayah** | Search bar filter lokal (in-memory) berdasarkan nama wilayah, case-insensitive, tanpa request tambahan |
+|  **Detail Gempa** | Klik item → halaman detail: Tanggal, Jam, Koordinat, Magnitudo, Kedalaman, Wilayah, Potensi |
+|  **Loading & Error State** | Indikator loading saat fetch; pesan error + tombol "Coba Lagi" saat jaringan bermasalah |
+|  **Material Design 3** | Tema light/dark + custom typography, palet oranye lembut (burnt orange) nyaman dilihat |
+|  **Navigasi 2 Screen** | Home ⇄ Detail via `navigation-compose`, tombol back berfungsi |
 
-## 📱 Screenshot
+##  Screenshot
 
 | Home Screen | Detail Screen |
 |---|---|
@@ -23,7 +23,7 @@ Dibuat untuk tugas **Responsi Mobile I — Paket 1: Aplikasi Katalog dan Monitor
 
 *Screenshot diambil dari emulator (Medium Phone API 36.1) saat app berjalan dengan data API BMKG asli.*
 
-## 🏗️ Arsitektur
+## Arsitektur
 
 **MVVM (Model-View-ViewModel) + Repository**, state-driven UI via `StateFlow`:
 
@@ -91,7 +91,7 @@ app/src/main/java/com/gempatrack/app/
         └── DetailScreen.kt          // 7 field + tombol back
 ```
 
-## 🌐 API
+##  API
 
 **Sumber data:** REST API BMKG — tanpa API key.
 
@@ -127,7 +127,7 @@ app/src/main/java/com/gempatrack/app/
 
 > **Catatan teknis:** seluruh nilai dari BMKG bertipe **String** (termasuk `Magnitude`). Parsing numerik memakai `magnitudeValue` (`toDoubleOrNull()`) di data class. Semua field nullable → null safety Kotlin terpenuhi.
 
-## 💻 Teknis
+##  Teknis
 
 ### Teknologi
 
@@ -163,7 +163,7 @@ adb install -r app/build/outputs/apk/debug/app-debug.apk
 | compileSdk | 37 |
 | Internet | `android.permission.INTERNET` di AndroidManifest.xml |
 
-## 🔄 Persyaratan Tugas (checklist)
+##  Persyaratan Tugas (checklist)
 
 - [x] Kotlin: data class, null safety, lambda
 - [x] Jetpack Compose + LazyColumn + reusabel composable
@@ -177,12 +177,11 @@ adb install -r app/build/outputs/apk/debug/app-debug.apk
 - [x] INTERNET permission
 - [x] Maks 2 screen (navigation-compose)
 
-## 📦 Deliverable
+##  Deliverable
 
 - Source code lengkap di repository ini
 - APK debug: `app-debug.apk` (dari `assembleDebug`)
 - Video penjelasan kode (fokus kode, bukan demo)
+https://youtu.be/QvPShM9vrEA?feature=shared
 
----
-
-Dibuat dengan ❤️ untuk Responsi Mobile I — Paket 1. 🌊
+Dibuat untuk Responsi Mobile I — Paket 1.
